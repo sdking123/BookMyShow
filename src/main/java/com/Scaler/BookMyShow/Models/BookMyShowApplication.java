@@ -1,4 +1,4 @@
-package com.Scaler.BookMyShow;
+package com.Scaler.BookMyShow.Models;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

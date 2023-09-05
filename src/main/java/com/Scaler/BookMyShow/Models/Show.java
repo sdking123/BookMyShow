@@ -1,4 +1,4 @@
-package com.Scaler.BookMyShow;
+package com.Scaler.BookMyShow.Models;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -6,7 +6,6 @@ import lombok.Setter;
 
 import java.util.Date;
 import java.util.List;
-import java.util.Scanner;
 
 @Entity
 @Getter
@@ -16,7 +15,9 @@ public class Show extends BaseModel{
     private Movie movie;
     private Date startTime;
     private Date endTime;
+    @OneToMany
     private List<ShowSeat> showSeat;
+    @ManyToOne
     private Screen screen;
     @Enumerated(EnumType.ORDINAL)
     @ElementCollection

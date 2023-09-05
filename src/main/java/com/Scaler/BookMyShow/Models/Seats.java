@@ -1,4 +1,4 @@
-package com.Scaler.BookMyShow;
+package com.Scaler.BookMyShow.Models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
