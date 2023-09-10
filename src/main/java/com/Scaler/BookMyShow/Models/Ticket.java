@@ -3,6 +3,8 @@ package com.Scaler.BookMyShow.Models;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -20,8 +22,8 @@ public class Ticket extends BaseModel{
     private User user;
     @ManyToMany
     private List<ShowSeat> showSeats;
-    private Date BookedAt;
-    private int amount;
+    private LocalDateTime BookedAt;
+    private double amount;
 
 }
 
